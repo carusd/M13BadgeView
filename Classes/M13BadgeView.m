@@ -260,6 +260,8 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    [self autoSetBadgeFrame];
+    
     //Update the frames of the layers
     CGRect textFrame;
     if (_pixelPerfectText) {
